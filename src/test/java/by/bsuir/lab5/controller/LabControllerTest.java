@@ -34,7 +34,7 @@ public class LabControllerTest {
     private LabController controller;
 
     @Test
-    public void test() throws Exception{
+    public void setController() throws Exception{
         assertThat(controller).isNotNull();
     }
 
@@ -68,6 +68,7 @@ public class LabControllerTest {
                     .andExpect(status().isOk())
                     .andDo(print());
     }
+
 }
 
 
